@@ -337,19 +337,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GoogleVR/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/GoogleVR/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\maconrm180\Desktop\OleMcCoders\Game\ByteJam-OleMcCoders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 37}
-    m_SelectedIDs: c22e0000
-    m_LastClickedID: 11970
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 242e0000
+    m_LastClickedID: 11812
     m_ExpandedIDs: 00000000242e00008430000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
