@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/VR Test.unity
+- path: Assets/HowToHealthSystem/_1_Final/GameScene_Final.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

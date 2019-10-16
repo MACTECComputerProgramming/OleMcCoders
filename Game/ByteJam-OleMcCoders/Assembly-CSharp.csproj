@@ -186,7 +186,44 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_0_Start\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_0_Start\Scripts\PlayerHandler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\EnemyHandler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\GameAssets.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\PlayerHandler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\_1_Final\Scripts\Window_GameOver.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\Blood_Handler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\CMDebug.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\Button_Sprite.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\Button_UI.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\ComponentActions.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\FunctionPeriodic.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\FunctionTimer.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\FunctionUpdater.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\UI_Bar.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\UI_BarMultiple.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\UI_Sprite.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\UI_TextComplex.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\UtilsClass.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\World_Bar.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\Utils\World_Sprite.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\Dirt_Handler.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\Generic_Mesh_Script.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\PositionMeshSorter.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\SetSpriteSorting.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\SpriteAnimator.cs" />
+    <Compile Include="Assets\HowToHealthSystem\Stuff\Scripts\UVVectors.cs" />
+    <Compile Include="Assets\Scripts\ColorChange.cs" />
+    <Compile Include="Assets\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitch.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
+    <None Include="Assets\HowToHealthSystem\Stuff\Scripts\CodeMonkey\README.txt" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
@@ -214,6 +251,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -228,9 +268,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="BuildPostProcessGVRPods">
-      <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -766,6 +803,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="V_Animation.csproj">
+      <Project>{C57F69B4-2B8F-B455-DFF1-694BC0513BC3}</Project>
+      <Name>V_Animation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
