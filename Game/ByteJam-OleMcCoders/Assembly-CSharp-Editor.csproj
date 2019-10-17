@@ -93,6 +93,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -107,9 +110,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="BuildPostProcessGVRPods">
-      <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
