@@ -186,6 +186,14 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+    <Compile Include="Assets\Scripts\ColorChange.cs" />
+    <Compile Include="Assets\Scripts\DestroyEventEmitter.cs" />
+    <Compile Include="Assets\Scripts\EnemyMove.cs" />
+    <Compile Include="Assets\Scripts\GunScript.cs" />
+    <Compile Include="Assets\Scripts\pauseGame.cs" />
+    <Compile Include="Assets\Scripts\Spawn.cs" />
+    <Compile Include="Assets\Scripts\Target.cs" />
+    <Compile Include="Assets\Scripts\WeaponScript.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
@@ -213,6 +221,9 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildPostProcessGVRPods">
+      <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/BuildPostProcessGVRPods.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>C:/Users/maconrm180/Desktop/OleMcCoders/Game/ByteJam-OleMcCoders/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
