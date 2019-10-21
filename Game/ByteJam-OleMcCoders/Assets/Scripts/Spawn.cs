@@ -7,12 +7,14 @@ public class Spawn : MonoBehaviour
     public GameObject prefab;
 
     public int spawnCount;
-
     public float spawnTime;
 
-    public float spawnDelay;
-
+    public float waveDelay;
+    public float firstWaveDelay = 0;
+    public int plusEnemies;
     public int remainingEnemies = 0;
+
+    bool firstWave = true;
 
     void Start()
     {
@@ -23,8 +25,20 @@ public class Spawn : MonoBehaviour
     {
 
         // Initial wait
-        yield return new WaitForSeconds(spawnDelay);
 
+        if (firstWave = true)
+        {
+            yield return new WaitForSeconds(firstWaveDelay);
+            
+            firstWave = false;
+        }
+        else { yield return new WaitForSeconds(waveDelay); }
+
+
+        yield return new WaitForSeconds(waveDelay);
+        
+        
+        
         for (int count = spawnCount; count > 0; --count)
         {
             GameObject clone = Instantiate(prefab, transform.position, transform.rotation);
@@ -50,7 +64,7 @@ public class Spawn : MonoBehaviour
 
         if (remainingEnemies == 0)
         {
-            spawnCount++;
+            spawnCount = spawnCount+ plusEnemies;
 
             StartCoroutine(SpawnObjects());
         }
