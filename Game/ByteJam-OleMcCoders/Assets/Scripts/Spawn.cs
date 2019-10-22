@@ -7,14 +7,23 @@ public class Spawn : MonoBehaviour
     public GameObject prefab;
 
     public int spawnCount;
+
     public float spawnTime;
 
-    public float waveDelay;
-    public float firstWaveDelay = 0;
-    public int plusEnemies;
+    public float spawnDelay;
+
     public int remainingEnemies = 0;
 
-    bool firstWave = true;
+    float x;
+    float z;
+
+    public float MinX ;
+    public float MaxX ;
+    public float MinZ ;
+    public float MaxZ ;
+
+
+
 
     void Start()
     {
@@ -25,23 +34,15 @@ public class Spawn : MonoBehaviour
     {
 
         // Initial wait
+        yield return new WaitForSeconds(spawnDelay);
 
-        if (firstWave = true)
-        {
-            yield return new WaitForSeconds(firstWaveDelay);
-            
-            firstWave = false;
-        }
-        else { yield return new WaitForSeconds(waveDelay); }
-
-
-        yield return new WaitForSeconds(waveDelay);
-        
-        
-        
         for (int count = spawnCount; count > 0; --count)
         {
-            GameObject clone = Instantiate(prefab, transform.position, transform.rotation);
+            x = Random.Range(MinX, MaxX);
+            z = Random.Range(MinZ, MaxZ);
+
+
+            GameObject clone = Instantiate(prefab, transform.position+(new Vector3(x,0,z)), Quaternion.identity);
 
             DestroyEventEmitter destroyEventEmitter = clone.AddComponent<DestroyEventEmitter>();
             destroyEventEmitter.OnObjectDestroyedEvent += OnGameObjectDestroyed;
@@ -64,7 +65,7 @@ public class Spawn : MonoBehaviour
 
         if (remainingEnemies == 0)
         {
-            spawnCount = spawnCount+ plusEnemies;
+            spawnCount++;
 
             StartCoroutine(SpawnObjects());
         }

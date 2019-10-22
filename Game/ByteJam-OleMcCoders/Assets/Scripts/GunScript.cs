@@ -15,7 +15,7 @@ public class GunScript : MonoBehaviour
             Shoot();
         }
    }    
-    public void Shoot()
+     void Shoot()
     {
         RaycastHit hit;
        if (Physics.Raycast(fpscam.transform.position, fpscam.transform.forward, out hit, range)){
@@ -29,5 +29,9 @@ public class GunScript : MonoBehaviour
 
 
         }
+
+
+
+
     }
 }

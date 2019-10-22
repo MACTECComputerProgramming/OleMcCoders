@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7941458012497912372}
   - component: {fileID: 8094442598438116487}
   - component: {fileID: 5336304168312189100}
-  - component: {fileID: 296861032}
   - component: {fileID: 296861033}
   m_Layer: 0
   m_Name: Capsule
@@ -123,22 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c053dc63ea07e4f9140acc5478dff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
---- !u!114 &296861032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8968587597159674144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 302bca915b3191d4c829032d8b992c8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  fpscam: {fileID: 0}
+  health: 10
 --- !u!114 &296861033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +140,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 296861032}
+        - m_Target: {fileID: 0}
           m_MethodName: Shoot
           m_Mode: 1
           m_Arguments:
