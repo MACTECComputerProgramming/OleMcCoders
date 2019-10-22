@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: Assets/Scenes/SampleScene.unity
-=======
-- path: Assets/Byte Jam Level.unity
->>>>>>> Stashed changes
+- path: Assets/town level.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
