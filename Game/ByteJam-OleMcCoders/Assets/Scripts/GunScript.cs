@@ -10,10 +10,9 @@ public class GunScript : MonoBehaviour
     public Camera fpscam;
     void Update()
     {
-       if(Input.GetButtonDown("Fire1"))
-        {
+      
             Shoot();
-        }
+        
    }    
      void Shoot()
     {
