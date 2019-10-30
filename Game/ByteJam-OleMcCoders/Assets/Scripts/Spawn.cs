@@ -7,7 +7,7 @@ public class Spawn : MonoBehaviour
     public GameObject prefab;
 
     public int spawnCount;
-
+    public int addEnemies;
     public float spawnTime;
 
     public float spawnDelay;
@@ -65,7 +65,7 @@ public class Spawn : MonoBehaviour
 
         if (remainingEnemies == 0)
         {
-            spawnCount++;
+            spawnCount = spawnCount + addEnemies; 
 
             StartCoroutine(SpawnObjects());
         }
