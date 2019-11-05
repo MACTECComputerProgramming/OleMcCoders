@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawn : MonoBehaviour
 {
@@ -14,8 +15,12 @@ public class Spawn : MonoBehaviour
 
     public int remainingEnemies = 0;
 
+    public Text text;
+
+    public int waveCount;
+
     float x;
-    float z;
+    float z; 
 
     public float MinX ;
     public float MaxX ;
@@ -35,7 +40,8 @@ public class Spawn : MonoBehaviour
 
         // Initial wait
         yield return new WaitForSeconds(spawnDelay);
-
+        waveCount++;
+        text.text = waveCount.ToString();
         for (int count = spawnCount; count > 0; --count)
         {
             x = Random.Range(MinX, MaxX);

@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-     Transform target;
+    Transform target;
     public Transform myTrans;
     public int Speed;
-    // Start is called before the first frame update
 
 
-    // Update is called once per frame
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -21,5 +20,8 @@ public class EnemyMove : MonoBehaviour
         transform.LookAt(target);
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
 
+
+
     }
+
 }

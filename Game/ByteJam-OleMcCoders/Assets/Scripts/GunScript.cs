@@ -10,12 +10,11 @@ public class GunScript : MonoBehaviour
     public Camera fpscam;
     void Update()
     {
-       if(Input.GetButtonDown("Fire1"))
-        {
+      
             Shoot();
-        }
+        
    }    
-    public void Shoot()
+     void Shoot()
     {
         RaycastHit hit;
        if (Physics.Raycast(fpscam.transform.position, fpscam.transform.forward, out hit, range)){
@@ -29,5 +28,9 @@ public class GunScript : MonoBehaviour
 
 
         }
+
+
+
+
     }
 }
